@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Slate Window Events Blueprints Extension",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "Tonetfal",
+	"CreatedByURL": "https://github.com/Tonetfal",
+	"DocsURL": "https://github.com/Tonetfal/SlateWindowEventsBlueprintsExtension",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "SlateWindowEventsBpExt",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
