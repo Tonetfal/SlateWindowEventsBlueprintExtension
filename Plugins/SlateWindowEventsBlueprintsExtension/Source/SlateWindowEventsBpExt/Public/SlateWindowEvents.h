@@ -20,6 +20,7 @@ public:
 public:
 	//~UGameInstanceSubsystem Interface
 	virtual void Initialize(FSubsystemCollectionBase& Collection) override;
+	virtual bool ShouldCreateSubsystem(UObject* Outer) const override;
 	//~End of UGameInstanceSubsystem Interface
 
 	UFUNCTION(BlueprintPure)

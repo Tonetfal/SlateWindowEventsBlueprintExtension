@@ -10,6 +10,16 @@ void USlateWindowEvents::Initialize(FSubsystemCollectionBase& Collection)
 	SlateApplication.OnApplicationActivationStateChanged().AddUObject(this, &ThisClass::OnWindowFocusChanged);
 }
 
+bool USlateWindowEvents::ShouldCreateSubsystem(UObject* Outer) const
+{
+	if (IsRunningDedicatedServer())
+	{
+		return false;
+	}
+
+	return Super::ShouldCreateSubsystem(Outer);
+}
+
 bool USlateWindowEvents::IsApplicationWindowActive() const
 {
 	return bIsApplicationWindowActive;
